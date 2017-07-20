@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    font-family: 'Microsoft Yahei Mono', Calibri, Arial, sans-serif !important;
+    font-size: 100%;
+    color: #7f8c97;
+    background-color: #222;
+    height:100%;
+    width:100%;
+}
+
+canvas{
+    display:block;
+}
+
+.background {
+    position: absolute;
+}
