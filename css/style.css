@@ -7,13 +7,27 @@ html, body {
     font-family: 'Microsoft Yahei Mono', Calibri, Arial, sans-serif !important;
     font-size: 100%;
     color: #7f8c97;
-    background-color: #222;
+    background-color: #111;
     height:100%;
     width:100%;
 }
 
 canvas{
     display:block;
+}
+
+.container {
+}
+
+.words {
+    text-align: center;
+    margin-left:auto; margin-right:auto;
+}
+
+.countup {
+    text-align: center;
+    width: 80%;
+    margin-left:auto; margin-right:auto;
 }
 
 .background {

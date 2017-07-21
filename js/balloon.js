@@ -35,8 +35,9 @@
     }
 
     function scrollCheck() {
-        if(document.body.scrollTop > height) animateHeader = false;
-        else animateHeader = true;
+        // do nothing
+        // if(document.body.scrollTop > height) animateHeader = false;
+        // else animateHeader = true;
     }
 
     function resize() {
@@ -88,5 +89,4 @@
             ctx.fill();
         };
     }
-
 })();
