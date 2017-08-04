@@ -1,10 +1,12 @@
-Y and M
+Ms Youzi and Mr Mike
 ---
 
 Just a website for the recording of our lives.
 
-Hope we can be together with each other for the rest of our lives.
+Wishing the story be amazing.
 
-A brand new journey is ahead, and I will be still be indomitable on my way to the end.
+```
+1ebKx7ez1OqjrLK7u+HQtM/uxL+88r3p
+```
 
-Wishing the next story be amazing.
+<div style="float:right">--- Mike 2017.07.14</div>
