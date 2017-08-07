@@ -1,6 +1,6 @@
 var background = document.getElementById('background');
 window.onscroll = function() {
-    // followTheScroll(background, 0)
+    followTheScroll(background, 0)
 };
 
 function followTheScroll(obj, top) {

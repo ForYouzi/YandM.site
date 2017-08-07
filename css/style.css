@@ -1,35 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0 !important;
+    padding: 0 !important;
+    margin-left:auto !important;
+    margin-right:auto !important;
 }
 
 html, body {
     font-family: 'Microsoft Yahei Mono', Calibri, Arial, sans-serif !important;
     font-size: 100%;
-    color: #7f8c97;
-    background-color: #111;
     height:100%;
     width:100%;
+    background: #f4f2e3;
 }
 
-canvas{
+canvas {
     display:block;
-}
-
-.container {
+    position: absolute;
 }
 
 .words {
     text-align: center;
-    margin-left:auto; margin-right:auto;
+}
+
+.countup-panel {
+    width: 100%;
+    text-align: center;
 }
 
 .countup {
+    height: 600px;
     text-align: center;
-    width: 80%;
-    margin-left:auto; margin-right:auto;
 }
 
 .background {
     position: absolute;
+    color: #7f8c97 !important;
 }
