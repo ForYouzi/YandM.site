@@ -30,7 +30,7 @@ minute = parseInt((totalSecond - 86400*365*year - 86400*day - 3600*hour)/60);
 second = parseInt(totalSecond - 86400*365*year - 86400*day - 3600*hour - 60*minute)%60;
 
 function setTitle() {
-    $("#title").html(year + ' Years ' + day + ' Days ' + hour + ' Hours ' + minute + ' Minutes ' + second + ' Seconds have passed.');
+    $("#title").html(year + 'y ' + day + 'd ' + hour + 'h ' + minute + 'm ' + second + 's have passed.');
 }
 
 setTitle();
@@ -65,10 +65,10 @@ setInterval(function() {
 
                 data:[
                     {
-                        value:second*6,
+                        value:second,
                     },
                     {
-                        value:50,
+                        value:60 - second,
                         name:'invisible',
                         itemStyle : placeHolderStyle
                     }
@@ -84,10 +84,10 @@ setInterval(function() {
 
                 data:[
                     {
-                        value:minute*6,
+                        value:minute,
                     },
                     {
-                        value:60,
+                        value:60 - minute,
                         name:'invisible',
                         itemStyle : placeHolderStyle
                     }
@@ -103,10 +103,10 @@ setInterval(function() {
 
                 data:[
                     {
-                        value:hour*360/24,
+                        value:hour,
                     },
                     {
-                        value:50,
+                        value:24 - hour,
                         name:'invisible',
                         itemStyle : placeHolderStyle
                     }
@@ -122,10 +122,10 @@ setInterval(function() {
 
                 data:[
                     {
-                        value:day*360/365,
+                        value:day,
                     },
                     {
-                        value:30,
+                        value:365 - day,
                         name:'invisible',
                         itemStyle : placeHolderStyle
                     }
@@ -141,10 +141,10 @@ setInterval(function() {
 
                 data:[
                     {
-                        value: year*360/100,
+                        value: year,
                     },
                     {
-                        value:30,
+                        value: 100 - year,
                         name:'invisible',
                         itemStyle : placeHolderStyle
                     }
@@ -169,10 +169,10 @@ option = {
 
             data:[
                 {
-                    value:second*6,
+                    value: second,
                 },
                 {
-                    value:50,
+                    value: 60 - second,
                     name:'invisible',
                     itemStyle : placeHolderStyle
                 }
@@ -188,10 +188,10 @@ option = {
 
             data:[
                 {
-                    value:minute*6,
+                    value: minute,
                 },
                 {
-                    value:60,
+                    value:60 - minute,
                     name:'invisible',
                     itemStyle : placeHolderStyle
                 }
@@ -207,10 +207,10 @@ option = {
 
             data:[
                 {
-                    value:hour*360/24,
+                    value: hour,
                 },
                 {
-                    value:50,
+                    value:24 - hour,
                     name:'invisible',
                     itemStyle : placeHolderStyle
                 }
@@ -226,10 +226,10 @@ option = {
 
             data:[
                 {
-                    value:day*360/365,
+                    value:day,
                 },
                 {
-                    value:30,
+                    value:365 - day,
                     name:'invisible',
                     itemStyle : placeHolderStyle
                 }
@@ -245,10 +245,10 @@ option = {
 
             data:[
                 {
-                    value: year*360/100,
+                    value: year,
                 },
                 {
-                    value:30,
+                    value: 100 - year,
                     name:'invisible',
                     itemStyle : placeHolderStyle
                 }
