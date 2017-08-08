@@ -59,7 +59,7 @@ setInterval(function() {
                 name:'second',
                 type:'pie',
                 clockWise:false,
-                RAdius : [180,200],
+                RAdius : [160, 180],
                 itemStyle : dataStyle,
                 hoverAnimation: false,
 
@@ -78,7 +78,7 @@ setInterval(function() {
                 name:'minute',
                 type:'pie',
                 clockWise:false,
-                radius : [160, 180],
+                radius : [140, 160],
                 itemStyle : dataStyle,
                 hoverAnimation: false,
 
@@ -98,7 +98,7 @@ setInterval(function() {
                 type:'pie',
                 clockWise:false,
                 hoverAnimation: false,
-                radius : [140, 160],
+                radius : [120, 140],
                 itemStyle : dataStyle,
 
                 data:[
@@ -117,7 +117,7 @@ setInterval(function() {
                 type:'pie',
                 clockWise:false,
                 hoverAnimation: false,
-                radius : [120, 140],
+                radius : [100, 120],
                 itemStyle : dataStyle,
 
                 data:[
@@ -136,7 +136,7 @@ setInterval(function() {
                 type:'pie',
                 clockWise: false,
                 hoverAnimation: false,
-                radius : [100, 120],
+                radius : [80, 100],
                 itemStyle : dataStyle,
 
                 data:[
@@ -156,14 +156,13 @@ setInterval(function() {
 }, 1000);
 
 option = {
-
     color: ['#85b6b2', '#6d4f8d','#cd5e7e', '#e38980','#f7db88'],
     series : [
         {
             name:'second',
             type:'pie',
             clockWise:false,
-            radius : [180,200],
+            radius : [160, 180],
             itemStyle : dataStyle,
             hoverAnimation: false,
 
@@ -182,7 +181,7 @@ option = {
             name:'minute',
             type:'pie',
             clockWise:false,
-            radius : [160, 180],
+            radius : [140, 160],
             itemStyle : dataStyle,
             hoverAnimation: false,
 
@@ -202,7 +201,7 @@ option = {
             type:'pie',
             clockWise:false,
             hoverAnimation: false,
-            radius : [140, 160],
+            radius : [120, 140],
             itemStyle : dataStyle,
 
             data:[
@@ -221,7 +220,7 @@ option = {
             type:'pie',
             clockWise:false,
             hoverAnimation: false,
-            radius : [120, 140],
+            radius : [100, 120],
             itemStyle : dataStyle,
 
             data:[
@@ -240,7 +239,7 @@ option = {
             type:'pie',
             clockWise: false,
             hoverAnimation: false,
-            radius : [100, 120],
+            radius : [80, 100],
             itemStyle : dataStyle,
 
             data:[
