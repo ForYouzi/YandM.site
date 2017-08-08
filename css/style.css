@@ -23,12 +23,12 @@ canvas {
 }
 
 .countup-panel {
-    width: 80%;
+    width: 60%;
     text-align: center;
 }
 
 .countup {
-    height: 500px;
+    height: 450px;
     text-align: center;
 }
 
