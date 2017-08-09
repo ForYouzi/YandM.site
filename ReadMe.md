@@ -1,6 +1,10 @@
 Ms Youzi and Mr Mike
 ---
 
+[![GitHub version](https://badge.fury.io/gh/MikeCoder%2FYandM.site.svg)](https://badge.fury.io/gh/MikeCoder%2FYandM.site)
+
+![icon](./favicon.ico)
+
 Yet, just a website for recording.
 
 Wishing the story be amazing.
