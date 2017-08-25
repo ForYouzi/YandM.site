@@ -30,7 +30,12 @@ minute = parseInt((totalSecond - 86400*365*year - 86400*day - 3600*hour)/60);
 second = parseInt(totalSecond - 86400*365*year - 86400*day - 3600*hour - 60*minute)%60;
 
 function setTitle() {
-    $("#title").html((year*365 + day) + ' days ' + hour + ' hours ' + minute + ' minutes <br>' + second + ' seconds have passed.');
+    var text = (year*365 + day) + ' days ';
+    text = text + hour + (hour <= 1 ? ' hour ' : ' hours ');
+    text = text + minute + (minute <= 1 ? ' minute <br>' : ' minutes <br>');
+    text = text + second + (second <= 1 ? ' second ' : ' seconds ');
+    text = text + 'have passed.';
+    $("#title").html(text);
 }
 
 setTitle();
