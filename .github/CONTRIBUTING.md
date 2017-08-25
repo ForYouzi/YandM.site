@@ -21,9 +21,3 @@
 
 Thanks for contributing! :heart:
 
-
-
-[//]: # (Simply change the urls below to your project information)
-
-[issues]: daniellmb/daniellmb.github.io/issues
-[new-issue]: daniellmb/daniellmb.github.io/issues/new
