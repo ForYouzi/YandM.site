@@ -1,20 +1,22 @@
 * {
-    margin: 0 !important;
-    padding: 0 !important;
-    margin-left:auto !important;
-    margin-right:auto !important;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-html, body {
-    font-family: 'Microsoft Yahei Mono', Calibri, Arial, sans-serif !important;
+html,
+body {
+    font-family: 'Calibri', 'Sans-serif', 'Helvetica';
+    font-style: italic;
     font-size: 100%;
-    height:100%;
-    width:100%;
+    height: 100%;
+    width: 100%;
     background: #f4f2e3;
 }
 
 canvas {
-    display:block;
+    display: block;
     position: absolute;
 }
 
@@ -35,4 +37,28 @@ canvas {
 .background {
     position: absolute;
     color: #7f8c97 !important;
+}
+
+.all-container {
+    position: relative;
+}
+
+.bulletin {
+    padding: 30px;
+    background-color: #293047;
+    width: 40%;
+    min-width: 300px;
+    height: 30%;
+    display: block;
+    text-align: center;
+    top: -350px;
+    opacity: 0.5;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    display: none;
+}
+
+.bulletin-news {
+    font-size: 1.5em;
+    color: #ffe600;
 }
