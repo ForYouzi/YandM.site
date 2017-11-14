@@ -14,7 +14,7 @@ words.push("My happiness is to live with you for the rest of my life.");
 words.push("I hope one day I can't take you home, but come back to our home.");
 words.push("I don't want a short attentive, as long as you accompany me for a lifetime.");
 words.push("The problems of your past are your business. The problems of your future are my privilege.");
-words.push("With all I am,with all I have ,I promise you all my life.");
+words.push("With all I am, with all I have, I promise you all my life.");
 words.push("Brief is life, but love is long.");
 words.push("Never frown, even when you are sad, because you never know who is falling in love with your smile.");
 words.push("There is nothing I want more I would fight for you I'd die for you.");
