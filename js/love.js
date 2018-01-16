@@ -1,4 +1,5 @@
 ﻿(function(window) {
+
     function random(min, max) {
         return min + Math.floor(Math.random() * (max - min + 1));
     }
@@ -11,6 +12,8 @@
     }
 
     function inheart(x, y, r) {
+        // x^2+(y-(x^2)^(1/3))^2 = 1
+        // http://www.wolframalpha.com/input/?i=x%5E2%2B%28y-%28x%5E2%29%5E%281%2F3%29%29%5E2+%3D+1
         var z = ((x / r) * (x / r) + (y / r) * (y / r) - 1) * ((x / r) * (x / r) + (y / r) * (y / r) - 1) * ((x / r) * (x / r) + (y / r) * (y / r) - 1) - (x / r) * (x / r) * (y / r) * (y / r) * (y / r);
         return z < 0;
     }
@@ -57,8 +60,8 @@
             x, y, t;
         for (var i = 10; i < 30; i += 0.2) {
             t = i / Math.PI;
-            x = 1.3*(16 * Math.pow(Math.sin(t), 3));
-            y = 1.3*(13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t));
+            x = 16 * Math.pow(Math.sin(t), 3);
+            y = 13 * Math.cos(t) - 5 * Math.cos(2 * t) - 2 * Math.cos(3 * t) - Math.cos(4 * t);
             points.push(new Point(x, y));
         }
         this.points = points;
@@ -174,7 +177,7 @@
             ctx.moveTo(0, 0);
             ctx.scale(0.75, 0.75);
             ctx.font = "12px 微软雅黑,Verdana"; // 字号肿么没有用? (ˉ(∞)ˉ)
-            ctx.fillText("Click here", 23, 10);
+            ctx.fillText("For Ms.Youzi", 23, 10);
             ctx.restore();
         },
         clear: function() {
@@ -369,7 +372,6 @@
         canFlower: function() {
             return !!this.blooms.length;
         },
-
         flower: function(num) {
             var s = this,
                 blooms = s.bloomsCache.splice(0, num);
@@ -382,10 +384,19 @@
             }
         },
 
+        snapshot: function(k, x, y, width, height) {
+            var ctx = this.ctx;
+            var image = ctx.getImageData(x, y, width, height);
+            this.record[k] = {
+                image: image,
+                point: new Point(x, y),
+                width: width,
+                height: height
+            }
+        },
         setSpeed: function(k, speed) {
             this.record[k || "move"].speed = speed;
         },
-
         move: function(k, x, y) {
             var s = this,
                 ctx = s.ctx;
@@ -481,7 +492,7 @@
         this.tree = tree;
         this.point = point;
         this.color = color || 'rgb(255,' + random(0, 255) + ',' + random(0, 255) + ')';
-        this.alpha = alpha || random(0.3, 0.5);
+        this.alpha = alpha || random(0.3, 1);
         this.angle = angle || random(0, 360);
         this.scale = scale || 0.1;
         this.place = place;

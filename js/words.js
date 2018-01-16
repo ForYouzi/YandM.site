@@ -21,11 +21,11 @@ words.push("There is nothing I want more I would fight for you I'd die for you."
 words.push("With this hand, I will lift your sorrows. Your cup will never empty, for I will be your wine. With this candle, I will light your way in darkness. With this ring, I ask you to be mine.");
 words.push("You make me want to be a better man.");
 words.push("In me the tiger sniffs the rose.");
+words.push("May the years is static good secular stability.");
 
 function getRandomWord() {
     var idx = Math.random();
-    idx = parseInt(100*idx%words.length);
+    idx = parseInt(100 * idx % words.length);
     return words[idx];
 }
 
-document.getElementById("mike-word").innerHTML = getRandomWord();

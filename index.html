@@ -1,71 +1,40 @@
-<!DOCTYPE HTML>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ms Youzi and Mr Mike</title>
-    <link rel="stylesheet" href="css/style.css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Mr.Mike and Miss.Youzi</title>
+    <link type="text/css" rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-    <div class="all-container">
-        <div id="countup-panel">
-            <center>
-                <h3 id="mike-word" style="max-width:400px; width:80%;font-weight:bold; padding-top:20px;"></h3>
-            </center>
-            <div id="countup" class="countup"></div>
-            <center>
-                <h3 id="title" style="font-weight:bold"></h3>
-            </center>
-        </div>
-        <div id="words" class="words">
-            <h3>Since we started the relationship on 2017.07.04.</h3>
-        </div>
-        <div id="tree-container">
-            <canvas id="tree" z-index="-1"></canvas>
+    <div id="main">
+        <div id="wrap">
+            <div id="words">
+                May the years is static good secular stability.
+            </div>
+            <div id="img">
+                <img id="we" src="./img/people.jpg" alt="" />
+            </div>
+
+            <div id="clock-box">
+                <div id="clock"></div>
+            </div>
+            <canvas id="canvas" width="1100" height="680"></canvas>
         </div>
     </div>
 
-    <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fireworks.min.js"></script>
-    <script type="text/javascript" src="js/echarts.min.js"></script>
-    <script type="text/javascript" src="js/countup.js"></script>
     <script type="text/javascript" src="js/words.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/jscex.min.js"></script>
     <script type="text/javascript" src="js/jscex-parser.js"></script>
     <script type="text/javascript" src="js/jscex-jit.js"></script>
     <script type="text/javascript" src="js/jscex-builderbase.min.js"></script>
     <script type="text/javascript" src="js/jscex-async.min.js"></script>
     <script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
-    <script type="text/javascript" src="js/functions.js"></script>
-    <script type="text/javascript" src="js/love.js"></script>
-    <script type="text/javascript" src="js/tree.js"></script>
-
-    <!-- Piwik -->
-    <script type="text/javascript">
-        var _paq = _paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setCookieDomain", "*.yandm.site"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
-        (function() {
-            var u = "//piwik.mikecoder.cn/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', '4']);
-            var d = document,
-                g = d.createElement('script'),
-                s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
-    </script>
-    <noscript><p><img src="//piwik.mikecoder.cn/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
+    <script type="text/javascript" src="js/functions.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/love.js" charset="utf-8"></script>
+    <script type="text/javascript" src="js/tree.js" charset="utf-8"></script>
 </body>
 
 </html>

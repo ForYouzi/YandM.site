@@ -1,51 +1,93 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-html,
-body {
-    font-family: 'Calibri', 'Sans-serif', 'Helvetica';
+    font-size: 20px;
+    font-family: 'Consolas', '微软雅黑', '宋体', sans-serif;
     font-style: italic;
-    font-size: 1.1em;
-    height: 100%;
+    color: #231F20;
+    overflow: auto
+}
+
+#main {
     width: 100%;
 }
 
-canvas {
-    display: block;
-    position: absolute;
-}
-
-.words {
-    text-align: center;
-}
-
-.countup-panel {
-    width: 60%;
-    text-align: center;
-}
-
-.countup {
-    height: 450px;
-    text-align: center;
-}
-
-#tree-container {
-    position: absolute;
+#wrap {
+    position: relative;
     margin: 0 auto;
-    width: 100%;
-    top: 0px;
+    width: 1100px;
+    height: 680px;
+    margin-top: 10px;
 }
 
-#tree {
+#text {
+    width: 272px;
+    height: 560px;
+    left: 188px;
+    top: 80px;
+    position: absolute;
+}
+
+#img {
     position: absolute;
     z-index: -1;
 }
 
-.all-container {
-    position: relative;
+#we {
+    display: none;
+	top: 491px;
+	left: 430px;
+	position: absolute;
+	width: 350px;
 }
 
+#words {
+    display: none;
+    position: absolute;
+    top: 450px;
+    left: 100px;
+    font-size: 16px;
+    width: 400px;
+}
+
+#clock-box {
+    position: absolute;
+    left: 60px;
+    top: 350px;
+    font-size: 28px;
+    display: none;
+}
+
+#clock {
+    margin-left: 24px;
+}
+
+#clock .digit {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#canvas {
+    margin: 0 auto;
+    width: 1100px;
+    height: 680px;
+}
+
+#error {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+}
+
+.hand {
+    cursor: pointer;
+}
+
+.say {
+    margin-left: 5px;
+}
+
+.space {
+    margin-right: 150px;
+}
