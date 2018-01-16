@@ -19,16 +19,8 @@ function setTitle() {
     $("#title").html(text);
 }
 
-var isBulletinShow = false;
-
-function showCelebration(day) {
-    if (!isBulletinShow) {
-        isBulletinShow = true;
-        $("#bulletin").fadeIn(2000);
-        $("#bulletin").fireworks();
-        var text = "Today is our <b><span style='color:orange;font-weight:bolder;font-style:italic'>" + day + "</span></b> days!";
-        $("#bulletin-news").html(text);
-    }
+function random(min, max) {
+    return min + Math.floor(Math.random() * (max - min + 1));
 }
 
 setTitle();
@@ -43,11 +35,7 @@ setInterval(function() {
     minute = parseInt((totalSecond - 86400 * 365 * year - 86400 * day - 3600 * hour) / 60);
     second = parseInt(totalSecond - 86400 * 365 * year - 86400 * day - 3600 * hour - 60 * minute) % 60;
 
-    var totaldays = parseInt(totalSecond/86400);
-    // totaldays = 100;
-    if (totaldays%100 == 0) {
-        showCelebration(totaldays);
-    }
+    var totaldays = parseInt(totalSecond / 86400);
 
     setTitle();
 
@@ -158,6 +146,7 @@ var dataStyle = {
         shadowColor: 'rgba(40, 40, 40, 0.5)',
     }
 };
+
 var placeHolderStyle = {
     normal: {
         color: 'rgba(0,0,0,0)',
@@ -174,7 +163,13 @@ var placeHolderStyle = {
 };
 
 option = {
-    color: ['#85b6b2', '#6d4f8d', '#cd5e7e', '#e38980', '#f7db88'],
+    color: [
+        'rgba(255,' + random(0, 255) + ',' + random(0, 255) + ',0.85)',
+        'rgba(255,' + random(0, 255) + ',' + random(0, 255) + ',0.85)',
+        'rgba(255,' + random(0, 255) + ',' + random(0, 255) + ',0.85)',
+        'rgba(255,' + random(0, 255) + ',' + random(0, 255) + ',0.85)',
+        'rgba(255,' + random(0, 255) + ',' + random(0, 255) + ',0.85)',
+    ],
     series: [{
             name: 'second',
             type: 'pie',

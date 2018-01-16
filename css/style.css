@@ -9,10 +9,9 @@ html,
 body {
     font-family: 'Calibri', 'Sans-serif', 'Helvetica';
     font-style: italic;
-    font-size: 100%;
+    font-size: 1.1em;
     height: 100%;
     width: 100%;
-    background: #f4f2e3;
 }
 
 canvas {
@@ -34,31 +33,19 @@ canvas {
     text-align: center;
 }
 
-.background {
+#tree-container {
     position: absolute;
-    color: #7f8c97 !important;
+    margin: 0 auto;
+    width: 100%;
+    top: 0px;
+}
+
+#tree {
+    position: absolute;
+    z-index: -1;
 }
 
 .all-container {
     position: relative;
 }
 
-.bulletin {
-    padding: 30px;
-    background-color: #293047;
-    width: 40%;
-    min-width: 300px;
-    height: 30%;
-    display: block;
-    text-align: center;
-    top: -350px;
-    opacity: 0.5;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    display: none;
-}
-
-.bulletin-news {
-    font-size: 1.5em;
-    color: #ffe600;
-}

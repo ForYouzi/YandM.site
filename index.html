@@ -10,7 +10,6 @@
 
 <body>
     <div class="all-container">
-        <div id="background" class="background"> <canvas id="balloon" width="100%" height="100%"></canvas> </div>
         <div id="countup-panel">
             <center>
                 <h3 id="mike-word" style="max-width:400px; width:80%;font-weight:bold; padding-top:20px;"></h3>
@@ -23,21 +22,25 @@
         <div id="words" class="words">
             <h3>Since we started the relationship on 2017.07.04.</h3>
         </div>
-        <div id="bulletin" class="bulletin">
-            <div id="bulletin-news" class="bulletin-news"></div>
-            <div class="bulletin-news" style="font-size:1em;text-align:left;padding-left:5%;padding-right:5%">
-                <br>
-                <p>They say a person needs just three things to be truly happy in this world: something to do, something to hope for and someone to love.</p>
-            </div>
+        <div id="tree-container">
+            <canvas id="tree" z-index="-1"></canvas>
         </div>
     </div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/jquery.fireworks.min.js"></script>
-    <script src="js/echarts.min.js"></script>
-    <script src="js/countup.js"></script>
-    <script src="js/balloon.js"></script>
-    <script src="js/words.js"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fireworks.min.js"></script>
+    <script type="text/javascript" src="js/echarts.min.js"></script>
+    <script type="text/javascript" src="js/countup.js"></script>
+    <script type="text/javascript" src="js/words.js"></script>
+    <script type="text/javascript" src="js/jscex.min.js"></script>
+    <script type="text/javascript" src="js/jscex-parser.js"></script>
+    <script type="text/javascript" src="js/jscex-jit.js"></script>
+    <script type="text/javascript" src="js/jscex-builderbase.min.js"></script>
+    <script type="text/javascript" src="js/jscex-async.min.js"></script>
+    <script type="text/javascript" src="js/jscex-async-powerpack.min.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+    <script type="text/javascript" src="js/love.js"></script>
+    <script type="text/javascript" src="js/tree.js"></script>
 
     <!-- Piwik -->
     <script type="text/javascript">
