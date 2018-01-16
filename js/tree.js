@@ -1,11 +1,9 @@
 (function() {
     var canvas = $('#canvas');
-
     if (!canvas[0].getContext) {
         $("#error").show();
         return false;
     }
-
     var width = canvas.width();
     var height = canvas.height();
     canvas.attr("width", width);
@@ -45,12 +43,10 @@
             speed: 10,
         }
     }
-
     var tree = new Tree(canvas[0], width, height, opts);
     var seed = tree.seed;
     var foot = tree.footer;
     var hold = 1;
-
     var seedAnimate = eval(Jscex.compile("async", function() {
         seed.draw();
         while (hold) {
@@ -67,21 +63,18 @@
             $await(Jscex.Async.sleep(10));
         }
     }));
-
     var growAnimate = eval(Jscex.compile("async", function() {
         do {
             tree.grow();
             $await(Jscex.Async.sleep(10));
         } while (tree.canGrow());
     }));
-
     var flowAnimate = eval(Jscex.compile("async", function() {
         do {
             tree.flower(2);
             $await(Jscex.Async.sleep(10));
         } while (tree.canFlower());
     }));
-
     var moveAnimate = eval(Jscex.compile("async", function() {
         tree.snapshot("p1", 240, 0, 610, 680);
         while (tree.move("p1", 500, 0)) {
@@ -90,12 +83,10 @@
         }
         foot.draw();
         tree.snapshot("p2", 500, 0, 610, 680);
-
         canvas.parent().css("background", "url(" + tree.toDataURL('image/png') + ")");
         $await(Jscex.Async.sleep(300));
         canvas.css("background", "none");
     }));
-
     var jumpAnimate = eval(Jscex.compile("async", function() {
         var ctx = tree.ctx;
         while (true) {
@@ -105,33 +96,32 @@
             $await(Jscex.Async.sleep(20));
         }
     }));
-
     var clockAnimate = eval(Jscex.compile("async", function() {
         var together = new Date();
-        // month starts from 0
         together.setFullYear(2017, 6, 4);
         together.setHours(22);
         together.setMinutes(0);
         together.setSeconds(0);
         together.setMilliseconds(0);
-
         $("#clock-box").fadeIn(2000);
         while (true) {
             timeElapse(together);
             $await(Jscex.Async.sleep(1000));
         }
     }));
-
     var showPeopleAnimate = eval(Jscex.compile("async", function() {
         $("#we").fadeIn(5000);
     }));
-
     var showTypewriterAnimate = eval(Jscex.compile("async", function() {
-        console.log(getRandomWord());
-        $('#words').html(getRandomWord());
+        var word = 'To Ms.Youzi:<br><br>';
+        word += getRandomWord() + '<br><br>';
+        for (var i = 0; i < 10; i++) {
+            word += ' ';
+        }
+        word += ' --- From Mr.Mike.';
+        $('#words').html(word);
         $('#words').show().typewriter();
     }));
-
     var runAsync = eval(Jscex.compile("async", function() {
         $await(seedAnimate());
         $await(growAnimate());
@@ -139,9 +129,9 @@
         $await(moveAnimate());
         clockAnimate().start();
         $await(showPeopleAnimate());
+        $await(Jscex.Async.sleep(1000));
         $await(showTypewriterAnimate());
         $await(jumpAnimate());
     }));
-
     runAsync().start();
 })();
