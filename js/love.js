@@ -439,7 +439,7 @@
                     figure = this.seed.heart.figure;
                 var r = 240,
                     x, y;
-                for (var i = 0; i < random(1, 2); i++) {
+                for (var i = 0; i < random(5, 8); i++) {
                     blooms.push(this.createBloom(width / 2 + width, height, r, figure, null, 1, null, 1, new Point(random(-100, 600), 720), random(200, 300)));
                 }
             }

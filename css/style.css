@@ -5,6 +5,8 @@ body {
     font-family: 'Consolas', '微软雅黑', '宋体', sans-serif;
     font-style: italic;
     color: #231F20;
+    text-shadow: 0 0 2px #CCCCFF;
+    font-weight: bold;
     overflow: auto
 }
 
@@ -35,10 +37,10 @@ body {
 
 #we {
     display: none;
-	top: 492px;
-	left: 430px;
-	position: absolute;
-	width: 350px;
+    top: 492px;
+    left: 430px;
+    position: absolute;
+    width: 350px;
 }
 
 #words {
@@ -64,7 +66,7 @@ body {
 
 #clock .digit {
     font-size: 24px;
-    font-weight: bold;
+    font-weight: bolder;
 }
 
 #canvas {

@@ -93,7 +93,7 @@
             tree.ctx.clearRect(0, 0, width, height);
             tree.jump();
             foot.draw();
-            $await(Jscex.Async.sleep(20));
+            $await(Jscex.Async.sleep(25));
         }
     }));
     var clockAnimate = eval(Jscex.compile("async", function() {
