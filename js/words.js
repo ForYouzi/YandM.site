@@ -1,5 +1,6 @@
 var words = new Array();
 words.push("You are my today and all of my tomorrows.");
+words.push("There is no magic formula when it comes to finding the love of your life. But when you meet your Mr. or Miss. Right, you have to grab every chance you get. ");
 words.push("They tell you in school that it’s the lungs that keep you breathing but it’s your heart.");
 words.push("Your voice is full of beautiful memories we have yet to make.");
 words.push("I can’t, and won’t ever be able to, get enough of you.");
@@ -20,12 +21,18 @@ words.push("Never frown, even when you are sad, because you never know who is fa
 words.push("There is nothing I want more I would fight for you I'd die for you.");
 words.push("With this hand, I will lift your sorrows. Your cup will never empty, for I will be your wine. With this candle, I will light your way in darkness. With this ring, I ask you to be mine.");
 words.push("You make me want to be a better man.");
-words.push("In me the tiger sniffs the rose.");
 words.push("May the years is static good secular stability.");
+words.push("You are like an ice-cold beer, a warm glove, a shirt laundered in the sun, a never-ending dream.")
+words.push("I love you not for who you are, but for who I am with you.");
+words.push("There is no denying I have feelings for you that can't be explained in any other way ... the only conclusion is LOVE.");
+words.push("Every once in a while, you find someone who's iridescent, and when you do, nothing will ever compare.");
+words.push("When you realize you want to spend the rest of your life with somebody, you want the rest of you life to start as soon as possible.");
+words.push("I would rather share one lifetime with you than face all the ages of this world alone.");
+words.push("I will be giving you the rest of my life.");
+words.push("If you would have me, I will be falling in love with you forever. If not, I'll still be giving my unrequited love forever.");
 
 function getRandomWord() {
     var idx = Math.random();
     idx = parseInt(100 * idx % words.length);
     return words[idx];
 }
-
