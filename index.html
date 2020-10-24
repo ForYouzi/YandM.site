@@ -41,30 +41,24 @@
     <script type="text/javascript" src="js/love.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/tree.js" charset="utf-8"></script>
 
-    <!-- Piwik -->
+
+
+    <!-- Matomo -->
     <script type="text/javascript">
-        var _paq = _paq || [];
-        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
-        _paq.push(["setDocumentTitle", document.domain + "/" + document.title]);
-        _paq.push(["setCookieDomain", "*.yandm.site"]);
-        _paq.push(['trackPageView']);
-        _paq.push(['enableLinkTracking']);
+	      var _paq = window._paq = window._paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
         (function() {
-            var u = "//piwik.mikecoder.cn/";
-            _paq.push(['setTrackerUrl', u + 'piwik.php']);
-            _paq.push(['setSiteId', '4']);
-            var d = document,
-                g = d.createElement('script'),
-                s = d.getElementsByTagName('script')[0];
-            g.type = 'text/javascript';
-            g.async = true;
-            g.defer = true;
-            g.src = u + 'piwik.js';
-            s.parentNode.insertBefore(g, s);
-        })();
+	    var u="https://piwik.d0n9x1n.dev/";
+		    _paq.push(['sckerUrl', u+'matomo.php']);
+		    _ph(['setSiteId', '4']);
+		    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+		    g.type='text/javascript'; g.async=true; matomo.js'; s.parentNode.insertBefore(g,s);
+		  })();
     </script>
-    <noscript><p><img src="//piwik.mikecoder.cn/piwik.php?idsite=4&rec=1" style="border:0;" alt="" /></p></noscript>
-    <!-- End Piwik Code -->
+    <noscri<img src="https://piwik.d0n9x1n.dev/matomo.php?idsite=4&amp;rec=1" style="border:0;" alt="" /></p></noscript>
+    <!-- End Matomo Code -->
 </body>
 
 </html>
